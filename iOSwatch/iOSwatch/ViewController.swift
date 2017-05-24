@@ -256,7 +256,5 @@ class ViewController: UIViewController, UITextViewDelegate, NVActivityIndicatorV
         SearchButton.isHidden = false
         owIcon.isHidden = false
         Back.isHidden = true
-    }
-    
-    
+    }    
 }
