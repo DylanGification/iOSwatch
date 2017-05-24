@@ -22,8 +22,16 @@
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+@IBOutlet weak var SearchButton: UIButton!
+@IBOutlet weak var AvatarImage: UIImageView!
+@IBOutlet weak var Avatar: UIImageView!
 // SOFTWARE.
 //
+@IBOutlet weak var RankLabel: UILabel!
+@IBOutlet weak var RankLabel: UILabel!
+@IBOutlet weak var RankText: UITextField!
+@IBOutlet weak var RankText: UITextField!
+@IBOutlet weak var RankLabel: UILabel!
 
 import UIKit
 import Foundation
@@ -40,6 +48,7 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
         let rows = 8
         let cellWidth = Int(self.view.frame.width / CGFloat(cols))
         let cellHeight = Int(self.view.frame.height / CGFloat(rows))
+        @IBOutlet weak var Back: UIButton!
 
         (NVActivityIndicatorType.ballPulse.rawValue ... NVActivityIndicatorType.audioEqualizer.rawValue).forEach {
             let x = ($0 - 1) % cols * cellWidth

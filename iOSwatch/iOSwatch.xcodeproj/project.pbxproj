@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		362673C61ED4E86800A6192E /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362673C11ED4E83C00A6192E /* NVActivityIndicatorView.framework */; };
 		362673C71ED4E86800A6192E /* NVActivityIndicatorView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 362673C11ED4E83C00A6192E /* NVActivityIndicatorView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		362673CB1ED50BFF00A6192E /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362673CA1ED50BFF00A6192E /* StatsController.swift */; };
 		362674241ED510CA00A6192E /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3626741D1ED5109E00A6192E /* SDWebImage.framework */; };
 		362674251ED510CA00A6192E /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3626741D1ED5109E00A6192E /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3626742A1ED5153700A6192E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362674291ED5153700A6192E /* Main.storyboard */; };
 		3626742B1ED51A6600A6192E /* Player.swift in Resources */ = {isa = PBXBuildFile; fileRef = 36F1F35C1ED26691001F9249 /* Player.swift */; };
 		3626742C1ED51A6E00A6192E /* AppDelegate.swift in Resources */ = {isa = PBXBuildFile; fileRef = 38E394681EB0A10900AFAD6A /* AppDelegate.swift */; };
-		3626742D1ED51A7200A6192E /* StatsController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 362673CA1ED50BFF00A6192E /* StatsController.swift */; };
 		3626742E1ED51A7700A6192E /* ViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 36722B1E1ED49614006302BA /* ViewController.swift */; };
 		3626742F1ED51A7B00A6192E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38E394741EB0A10900AFAD6A /* Info.plist */; };
 		36722B1F1ED49614006302BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36722B1E1ED49614006302BA /* ViewController.swift */; };
@@ -130,7 +128,6 @@
 
 /* Begin PBXFileReference section */
 		362673BA1ED4E83C00A6192E /* NVActivityIndicatorView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NVActivityIndicatorView.xcodeproj; path = ../Carthage/Checkouts/NVActivityIndicatorView/NVActivityIndicatorView.xcodeproj; sourceTree = "<group>"; };
-		362673CA1ED50BFF00A6192E /* StatsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsController.swift; sourceTree = "<group>"; };
 		3626740F1ED5109E00A6192E /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = ../Carthage/Checkouts/SDWebImage/SDWebImage.xcodeproj; sourceTree = "<group>"; };
 		362674291ED5153700A6192E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		36722B1E1ED49614006302BA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -217,7 +214,6 @@
 				38E394711EB0A10900AFAD6A /* LaunchScreen.storyboard */,
 				38E394741EB0A10900AFAD6A /* Info.plist */,
 				36722B1E1ED49614006302BA /* ViewController.swift */,
-				362673CA1ED50BFF00A6192E /* StatsController.swift */,
 				362674291ED5153700A6192E /* Main.storyboard */,
 			);
 			path = iOSwatch;
@@ -396,7 +392,6 @@
 			files = (
 				3626742F1ED51A7B00A6192E /* Info.plist in Resources */,
 				3626742E1ED51A7700A6192E /* ViewController.swift in Resources */,
-				3626742D1ED51A7200A6192E /* StatsController.swift in Resources */,
 				3626742C1ED51A6E00A6192E /* AppDelegate.swift in Resources */,
 				3626742B1ED51A6600A6192E /* Player.swift in Resources */,
 				3626742A1ED5153700A6192E /* Main.storyboard in Resources */,
@@ -420,7 +415,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36722B1F1ED49614006302BA /* ViewController.swift in Sources */,
-				362673CB1ED50BFF00A6192E /* StatsController.swift in Sources */,
 				36F1F35D1ED26692001F9249 /* Player.swift in Sources */,
 				38E394691EB0A10900AFAD6A /* AppDelegate.swift in Sources */,
 			);

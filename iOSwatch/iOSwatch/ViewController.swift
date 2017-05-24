@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import NVActivityIndicatorView
+import SDWebImage
 
 class ViewController: UIViewController, UITextViewDelegate, NVActivityIndicatorViewable {
     
@@ -16,8 +17,47 @@ class ViewController: UIViewController, UITextViewDelegate, NVActivityIndicatorV
     @IBOutlet weak var platformSelect: UISegmentedControl!
     @IBOutlet weak var regionSelect: UISegmentedControl!
     @IBOutlet weak var tagTextField: UITextField!
+    @IBOutlet weak var SearchButton: UIButton!
+    @IBOutlet weak var owIcon: UIImageView!
+    @IBOutlet weak var avatarImage: UIImageView!
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var userPlatform: UITextField!
+    @IBOutlet weak var userRegion: UITextField!
+    @IBOutlet weak var levelLabel: UILabel!
+    @IBOutlet weak var levelText: UITextField!
+    @IBOutlet weak var prestigeLabel: UILabel!
+    @IBOutlet weak var prestigeText: UITextField!
+    @IBOutlet weak var RankText: UITextField!
+    @IBOutlet weak var RankLabel: UILabel!
+    @IBOutlet weak var WinRateLabel: UILabel!
+    @IBOutlet weak var WinRateText: UITextField!
+    @IBOutlet weak var AvgElimsLabel: UILabel!
+    @IBOutlet weak var AvgElimsText: UITextField!
+    @IBOutlet weak var TimePlayedLabel: UILabel!
+    @IBOutlet weak var TimeText: UITextField!
+    @IBOutlet weak var Back: UIButton!
     
     var currentPlayer:Player = Player()
+    
+    override func viewDidLoad() {
+        avatarImage.isHidden = true
+        name.isHidden = true
+        userPlatform.isHidden = true
+        userRegion.isHidden = true
+        levelLabel.isHidden = true
+        levelText.isHidden = true
+        prestigeLabel.isHidden = true
+        prestigeText.isHidden = true
+        RankText.isHidden = true
+        RankLabel.isHidden = true
+        WinRateText.isHidden = true
+        WinRateLabel.isHidden = true
+        AvgElimsText.isHidden = true
+        AvgElimsLabel.isHidden = true
+        TimePlayedLabel.isHidden = true
+        TimeText.isHidden = true
+        Back.isHidden = true
+    }
     
     @IBAction func platformSelection(_ sender: UISegmentedControl) {
         
@@ -73,6 +113,7 @@ class ViewController: UIViewController, UITextViewDelegate, NVActivityIndicatorV
             let urlStr:String = ("https://www.owapi.net/api/v3/u/" + str + "/blob?platform=" + currentPlayer.platform)
             var request = URLRequest(url: URL(string: urlStr)!)
             let session = URLSession.shared
+            currentPlayer.name = str
             request.httpMethod = "GET"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -103,12 +144,14 @@ class ViewController: UIViewController, UITextViewDelegate, NVActivityIndicatorV
                                             if let level:Int = overall_stats["level"] as! Int {
                                                 self.currentPlayer.level = String(level)
                                             }
+                                            if let prestige:Int = overall_stats["prestige"] as! Int {
+                                                self.currentPlayer.prestige = String(prestige)
+                                            }
                                             if let rank:Int = overall_stats["comprank"] as! Int {
                                                 self.currentPlayer.rank = String(rank)
                                             }
                                             if let totalWinPerc:Int = overall_stats["win_rate"] as! Int {
                                                 self.currentPlayer.totalWinPerc = String(totalWinPerc)
-                                                print(totalWinPerc)
                                             }
                                             self.currentPlayer.avatar = overall_stats["avatar"] as! String
                                         
@@ -116,6 +159,7 @@ class ViewController: UIViewController, UITextViewDelegate, NVActivityIndicatorV
                                     }
                                 }
                             }
+                            self.hideStuff()
                             activityIndicatorView.stopAnimating()
                             self.tagTextField.text = ""
                         }
@@ -135,6 +179,83 @@ class ViewController: UIViewController, UITextViewDelegate, NVActivityIndicatorV
         else {
             self.tagTextField.text = ""
         }
+    }
+    
+    func hideStuff() {
+        platformSelect.isHidden = true
+        regionSelect.isHidden = true
+        tagTextField.isHidden = true
+        SearchButton.isHidden = true
+        owIcon.isHidden = true
+        avatarImage.isHidden = false
+        name.isHidden = false
+        userPlatform.isHidden = false
+        userRegion.isHidden = false
+        levelLabel.isHidden = false
+        levelText.isHidden = false
+        prestigeLabel.isHidden = false
+        prestigeText.isHidden = false
+        RankText.isHidden = false
+        RankLabel.isHidden = false
+        WinRateText.isHidden = false
+        WinRateLabel.isHidden = false
+        AvgElimsText.isHidden = false
+        AvgElimsLabel.isHidden = false
+        TimePlayedLabel.isHidden = false
+        TimeText.isHidden = false
+        
+        /*
+         * Circular UIImageView
+         **/
+        self.avatarImage.layer.cornerRadius = 10.0
+        self.avatarImage.clipsToBounds = true;
+        
+        /**
+         * Border for UIImageView
+         **/
+        self.avatarImage.layer.borderWidth = 3.0
+        self.avatarImage.layer.borderColor = UIColor.black.cgColor
+        
+        /**
+         * Setup image using SDWebImage Library
+         **/
+        avatarImage.sd_setImage(with: URL(string: currentPlayer.avatar))
+        
+        name.text = currentPlayer.name
+        userPlatform.text = currentPlayer.platform
+        userRegion.text = currentPlayer.region
+        levelText.text = currentPlayer.level
+        prestigeText.text = currentPlayer.prestige
+        RankText.text = currentPlayer.rank
+        WinRateText.text = currentPlayer.totalWinPerc
+        AvgElimsText.text = currentPlayer.avgElims
+        TimeText.text = currentPlayer.time
+        Back.isHidden = false
+    }
+    
+    @IBAction func backToMain(){
+        avatarImage.isHidden = true
+        name.isHidden = true
+        userPlatform.isHidden = true
+        userRegion.isHidden = true
+        levelLabel.isHidden = true
+        levelText.isHidden = true
+        prestigeLabel.isHidden = true
+        prestigeText.isHidden = true
+        RankText.isHidden = true
+        RankLabel.isHidden = true
+        WinRateText.isHidden = true
+        WinRateLabel.isHidden = true
+        AvgElimsText.isHidden = true
+        AvgElimsLabel.isHidden = true
+        TimePlayedLabel.isHidden = true
+        TimeText.isHidden = true
+        platformSelect.isHidden = false
+        regionSelect.isHidden = false
+        tagTextField.isHidden = false
+        SearchButton.isHidden = false
+        owIcon.isHidden = false
+        Back.isHidden = true
     }
     
     

@@ -7,16 +7,14 @@
 //
 
 class Player{
-    
+    var avatar:String = ""
+    var name:String = ""
     var platform:String = ""
     var region:String = ""
-    var name:String = ""
-    var urlName:String = ""
     var level:String = ""
     var prestige:String = ""
     var rank:String = ""
     var totalWinPerc:String = ""
-    var time:String = ""
-    var avatar:String = ""
     var avgElims:String = ""
+    var time:String = ""    
 }

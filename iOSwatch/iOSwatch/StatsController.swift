@@ -19,24 +19,32 @@ class StatsController: UIViewController, UITextViewDelegate, NVActivityIndicator
 //    @IBOutlet weak var levelNum: UILabel!
 //    @IBOutlet weak var quickPlayTitle: UILabel!
 //    @IBOutlet weak var competitivePlayTitle: UILabel!
-//    @IBOutlet weak var avatarImage: UIImageView!
+    @IBOutlet weak var avatarImage: UIImageView!
 //    @IBOutlet weak var competitiveRankLabel: UILabel!
 //    @IBOutlet weak var competitiveRankNum: UILabel!
 //    @IBOutlet weak var quickPercent: UILabel!
 //    @IBOutlet weak var compPercent: UILabel!
 //    @IBOutlet weak var compPlayTime: UILabel!
 //    @IBOutlet weak var quickPlayTime: UILabel!
+//
 //    
-//    
-//    var player:Player? // Player info from last ViewController
-//    
+    var player:Player? // Player info from last ViewController
+//
 //    override func viewWillAppear(_ animated: Bool) {
 //        self.navigationController?.navigationBar.isHidden = false
 //        self.tabBarController?.title = "Profile"
 //    }
 //    
-//    override func viewDidLoad() {
-//        
+    override func viewDidLoad() {
+        
+        let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        let activityIndicatorView = NVActivityIndicatorView(frame: frame, type: .pacman, color: UIColor.blue)
+        activityIndicatorView.center = view.center
+        view.addSubview(activityIndicatorView)
+        activityIndicatorView.startAnimating()
+        
+        fillStats(_<#AnyObject#>)
+//
 //        self.nameLabel.text = player!.name
 //        self.levelNum.text = player!.level
 //        
@@ -53,17 +61,21 @@ class StatsController: UIViewController, UITextViewDelegate, NVActivityIndicator
 //         **/
 //        self.avatarImage.layer.cornerRadius = 10.0
 //        self.avatarImage.clipsToBounds = true;
-//        
+//
 //        /**
 //         * Border for UIImageView
 //         **/
 //        self.avatarImage.layer.borderWidth = 3.0
 //        self.avatarImage.layer.borderColor = UIColor.black.cgColor
-//        
+//
 //        /**
 //         * Setup image using SDWebImage Library
 //         **/
 //        self.avatarImage.sd_setImage(with: URL(string: player!.avatar))
-//        
-//    }
+//
+    }
+    
+    func fillStats(_ sender: AnyObject) {
+        
+    }
 }
