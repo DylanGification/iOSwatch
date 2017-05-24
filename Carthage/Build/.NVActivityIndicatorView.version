@@ -1,0 +1,18 @@
+{
+  "iOS" : [
+    {
+      "hash" : "0ae68136d055889f9049e85712df9cdd5c4c525371d8fc5ff0d22c88f5be89cc",
+      "name" : "NVActivityIndicatorView"
+    }
+  ],
+  "commitish" : "3.6.1",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}

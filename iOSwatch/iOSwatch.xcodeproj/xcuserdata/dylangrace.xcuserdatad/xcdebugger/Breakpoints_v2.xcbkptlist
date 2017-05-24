@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSwatch/Player.swift"
+            timestampString = "517275914.012073"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "Player"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSwatch.Player.__deallocating_deinit"
+                  moduleName = "iOSwatch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dylangrace/Documents/iOSwatch/iOSwatch/iOSwatch/Player.swift"
+                  timestampString = "517276570.642359"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSwatch.Player.deinit"
+                  moduleName = "iOSwatch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dylangrace/Documents/iOSwatch/iOSwatch/iOSwatch/Player.swift"
+                  timestampString = "517276570.644394"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSwatch.Player.init () -&gt; iOSwatch.Player"
+                  moduleName = "iOSwatch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dylangrace/Documents/iOSwatch/iOSwatch/iOSwatch/Player.swift"
+                  timestampString = "517276570.646734"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSwatch.Player.__allocating_init () -&gt; iOSwatch.Player"
+                  moduleName = "iOSwatch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dylangrace/Documents/iOSwatch/iOSwatch/iOSwatch/Player.swift"
+                  timestampString = "517276570.650323"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSwatch/StatsController.swift"
+            timestampString = "517280116.797589"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSwatch/ViewController.swift"
+            timestampString = "517281784.918546"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSwatch.ViewController.platformSelect.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UISegmentedControl&gt;"
+                  moduleName = "iOSwatch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dylangrace/Documents/iOSwatch/iOSwatch/iOSwatch/ViewController.swift"
+                  timestampString = "517281986.973434"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSwatch.ViewController.platformSelect.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UISegmentedControl&gt;"
+                  moduleName = "iOSwatch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dylangrace/Documents/iOSwatch/iOSwatch/iOSwatch/ViewController.swift"
+                  timestampString = "517281986.975827"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSwatch.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; iOSwatch.ViewController"
+                  moduleName = "iOSwatch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dylangrace/Documents/iOSwatch/iOSwatch/iOSwatch/ViewController.swift"
+                  timestampString = "517281986.977592"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSwatch.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;iOSwatch.ViewController&gt;"
+                  moduleName = "iOSwatch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dylangrace/Documents/iOSwatch/iOSwatch/iOSwatch/ViewController.swift"
+                  timestampString = "517281986.980032"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSwatch/ViewController.swift"
+            timestampString = "517281815.002752"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "platformSelection(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

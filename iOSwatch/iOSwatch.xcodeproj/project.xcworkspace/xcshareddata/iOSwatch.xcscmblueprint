@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "61B6E2F4B2C882EADBFFD14ACAE26D00360D20CC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B855296DB2FBBE0D894E1596F82ECB0A2E701A17" : 9223372036854775807,
+    "61B6E2F4B2C882EADBFFD14ACAE26D00360D20CC" : 9223372036854775807,
+    "222F0B995A5ACD79F5EA7E36FB7802A91BB77C85" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FE97BC4B-122C-40A7-BB50-AB4A7F8B2A3D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B855296DB2FBBE0D894E1596F82ECB0A2E701A17" : "..\/Downloads\/Translate%20-%20finish",
+    "61B6E2F4B2C882EADBFFD14ACAE26D00360D20CC" : "iOSwatch\/",
+    "222F0B995A5ACD79F5EA7E36FB7802A91BB77C85" : "overwatch-stats-app\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "iOSwatch",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOSwatch\/iOSwatch.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cshealy\/overwatch-stats-app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "222F0B995A5ACD79F5EA7E36FB7802A91BB77C85"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DylanGification\/iOSwatch.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "61B6E2F4B2C882EADBFFD14ACAE26D00360D20CC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/curlybert\/Translate.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B855296DB2FBBE0D894E1596F82ECB0A2E701A17"
+    }
+  ]
+}
